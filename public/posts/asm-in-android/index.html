@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        ARM32 Assembly On Android ::
+        Home of Kut — Kut Kut is posting ... 
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Hello, and welcome to my blog about writing &amp;ldquo;Hello World&amp;rdquo; in ARM assembly on an Android device!
+First, let&amp;rsquo;s briefly review what ARM assembly is.
+ARM stands for Advanced RISC Machine, which is a type of processor architecture commonly used in mobile devices and other embedded systems.
+Assembly language is a low-level programming language that directly corresponds to machine code, which is the binary code that actually executes on the processor."
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/asm-in-android/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="img/favicon.png" />
+
+
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ARM32 Assembly On Android"/>
+<meta name="twitter:description" content="This is a short blog about how to write arm assembly on android"/>
+
+
+
+<meta property="og:title" content="ARM32 Assembly On Android" />
+<meta property="og:description" content="This is a short blog about how to write arm assembly on android" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/asm-in-android/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-14T00:00:00+00:00" /><meta property="og:site_name" content="Home of Kut" />
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+		<div class="container">
+			<header class="header">
+  <span class="header__inner">
+    <a
+  href=""
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >kutkut</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">Home</a></li>
+      
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+			
+			<div class="content">
+
+        
+  
+  
+  <article class="post">
+    <h1 class="post-title">ARM32 Assembly On Android</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          2022-07-14
+        </time>
+
+        
+          
+        
+      
+
+      
+        <span class="post-author"
+          >— Written by KutKut</span
+        >
+
+
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>Hello, and welcome to my blog about writing &ldquo;Hello World&rdquo; in ARM assembly on an Android device!</p>
+<p>First, let&rsquo;s briefly review what ARM assembly is.</p>
+<p>ARM stands for Advanced RISC Machine, which is a type of processor architecture commonly used in mobile devices and other embedded systems.</p>
+<p>Assembly language is a low-level programming language that directly corresponds to machine code, which is the binary code that actually executes on the processor. So, by writing assembly code, we can control the behavior of the processor and perform various tasks on the device.</p>
+<p>To get started, you will need an Android device or emulator with an ARM processor, and a text editor or IDE to write your code. I will be using the Termux app, which provides a Linux terminal environment on Android.</p>
+<p>Now, let&rsquo;s open up the terminal and create a new file for our assembly code. I will use the command &ldquo;vi hello.s&rdquo; to create a file called &ldquo;hello.s&rdquo; and open it in the vim text editor.</p>
+<p>In this file, we will write the assembly code to print out &ldquo;Hello World&rdquo; to the terminal. Here is the code:</p>
+<pre tabindex="0"><code>
+/* hello world in arm assembly */
+
+.global _start
+_start:
+  MOV R7, #4       @ Syscall number
+  MOV R0, #1       @ Stdout is monitor
+  LDR R1,=hello    @ string located at hello:
+  MOV R2, #12      @ string is 19 chars long
+  SVC 0            @ ask linux to write to stdout
+
+_exit:
+  MOV R7, #1      @ Syscall exit 
+  MOV R0, #0      @ Return 0
+  SWI 0           @ Software interrupt
+
+.data
+hello:
+  .ascii &#34;Hello World\n&#34;
+</code></pre><p>Let&rsquo;s go through this code line by line. Firstly, we declare a global symbol called &ldquo;_start&rdquo;, which is the entry point of our program.</p>
+<p>Inside the &ldquo;_start&rdquo; function, we first use syscall for using the moniter and tell where we found that with R0</p>
+<p>Next, we move the lenght of the characters into R2 and load the address of the &ldquo;hello&rdquo; string into the register R0 using the &ldquo;ldr&rdquo; instruction. This instruction loads the data at the memory address specified by its operand, in this case the symbol &ldquo;hello&rdquo;.</p>
+<p>After that, we use _exit label to exit the program.</p>
+<p>The &ldquo;hello&rdquo; string is defined after the &ldquo;_exit&rdquo; label using the &ldquo;.ascii&rdquo; directive. This directive allows us to define a string of characters directly in our code.</p>
+<p>Now that we have written our code, let&rsquo;s assemble and link it using the commands</p>
+<pre tabindex="0"><code>as hello.s -o hello.o
+ld hello.o -o hello 
+</code></pre><p>These commands invoke the assembler and linker tools to produce an executable file called &ldquo;hello&rdquo;.</p>
+<p>Finally, we can run the program using the command &ldquo;./hello&rdquo;, and we should see the output &ldquo;Hello World&rdquo; printed to the console!</p>
+<p>That&rsquo;s it for this blog on writing &ldquo;Hello World&rdquo; in ARM assembly on Android. I hope you found it informative and helpful. Stay tuned for more blogs about programming and technology!</p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="/posts/hello/">
+                  <span class="button__text">Hello Friend</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">© 2023 by kutkut</div>
+      
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>

@@ -1,0 +1,44 @@
+baseurl = ""
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 10
+
+[params]
+  contentTypeName = "posts"
+  defaultTheme = "dark"
+  showMenuItems = 3
+	AuthorName = "KutKut"
+  showReadingTime = false
+
+[languages]
+  [languages.en]
+    title = "Home of Kut"
+    subtitle = "Kut Kut is posting ... "
+    keywords = ""
+    copyright = "© 2023 by kutkut"
+    menuMore = ">"
+    writtenBy = "Written by"
+    readMore = "Read More"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.en.params.logo]
+      logoText = "kutkut"
+      logoHomeLink = ""
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+				weight = 10
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+				weight = 20
+

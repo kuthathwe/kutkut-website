@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home of Kut</title>
+    
+    
+    
+    <link>/</link>
+    <description>Recent content on Home of Kut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2023 by kutkut</copyright>
+    <lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ARM32 Assembly On Android</title>
+      <link>/posts/asm-in-android/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/asm-in-android/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          This is a short blog about how to write arm assembly on android
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>A Little About Me</title>
+      <link>/about/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Hello Friends :) # Hello again, my name is Yohannes Molla, and I am a passionate coder and problem solver from Ethiopia. I discovered my love for coding at the young age of 15 and have been hooked ever since. As a high school graduate, I have dedicated my life to programming and finding innovative solutions to complex problems.
+I am a true coding enthusiast who loves to explore new technologies and programming languages.
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Hello Friend</title>
+      <link>/posts/hello/</link>
+      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hello/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          &#34;Hello, friend?&#34; That&#39;s lame. Maybe I should give you a name?
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
