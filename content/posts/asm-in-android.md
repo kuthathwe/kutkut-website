@@ -29,7 +29,7 @@ _start:
   MOV R0, #1       @ Stdout is monitor
   LDR R1,=hello    @ string located at hello:
   MOV R2, #12      @ string is 19 chars long
-  SVC 0            @ ask linux to write to stdout
+  SWI 0            @ ask linux to exit the program
 
 _exit:
   MOV R7, #1      @ Syscall exit 
